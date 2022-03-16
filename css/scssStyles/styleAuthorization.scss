@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    // border: 1px solid black;
+}
+
+html {
+    background-color: #f1f0ff;
+}
+
+div.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    div.AuthorizationContainer {
+        width: 40%;
+        max-width: 400px;
+        min-width: 200px;
+        height: 50%;
+        max-height: 500px;
+
+        padding: 5px;
+
+        background-color: white;
+        box-shadow: 2px 2px grey;
+
+        div.Title {
+            text-align: start;
+            font-weight: bold;
+            font-family: "Roboto";
+
+            a.signUp{
+                display: block;
+                margin-top: 5px;
+
+                color: rgb(149, 192, 248);
+                text-decoration: none;
+                font-size: 10px;                
+            }
+        }
+
+        form.authorizationForm {
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 auto;
+            margin-top: 20px;
+
+            background-color: white;
+
+            & > div.inputContainer {
+                height: 40px;
+                margin: 10px 0px;
+
+                justify-content: center;
+                align-items: center;
+
+                border: 1px solid red;
+            }
+        }
+    }
+}

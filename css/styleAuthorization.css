@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #f1f0ff;
+}
+
+div.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+div.mainContainer div.AuthorizationContainer {
+  width: 40%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 50%;
+  max-height: 500px;
+  padding: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px grey;
+          box-shadow: 2px 2px grey;
+}
+
+div.mainContainer div.AuthorizationContainer div.Title {
+  text-align: start;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+div.mainContainer div.AuthorizationContainer div.Title a.signUp {
+  display: block;
+  margin-top: 5px;
+  color: #95c0f8;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+div.mainContainer div.AuthorizationContainer form.authorizationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: white;
+}
+
+div.mainContainer div.AuthorizationContainer form.authorizationForm > div.inputContainer {
+  height: 40px;
+  margin: 10px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
